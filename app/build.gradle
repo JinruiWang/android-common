@@ -57,7 +57,7 @@ task makeJar(type: Jar) {
     def rootDir = project.getRootDir();
     def parentDir = project.getRootDir().getParentFile().getAbsolutePath();
 
-    delete 'build/libs/*.*'
+    //delete 'build/libs/*.*'
     archiveName 'android-common-' + libVersion + '.jar'
     destinationDir = file('build/libs')
     // 从哪里打包class文件
